@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contianer{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(135deg,rgb(2, 2, 73),rgb(178, 10, 178));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.to-do-list{
+    width: 600px;
+    height: fit-content;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2));
+    padding: 10px;
+    border-radius: 20px;
+}
+.to-do-list h1{
+    font-size:45px;
+    text-align: center;
+}
+.to-do-list img{
+    width: 50px;
+    align-items: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    height: 50px;
+    margin: 20px 6px;
+    cursor: pointer;
+}
+.row input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    border :none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.row button{
+    width:100px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: darkorange;
+    border :none;
+    height: 50px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+}
+ul{
+    background-color: #fff;
+    border-radius: 20px;
+}
+ul li {
+    list-style: none;
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+ul li::before{
+    content:"";
+    width: 28px;
+    height: 28px;
+    background-image: url(./unchecked.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+ul .complete::before{
+    background-image: url(./checked.png);
+}
+ul li span{
+    font-size: 22px;
+    position: absolute;
+    top: 3;
+    left: 100%;
+    text-align: center;
+
+}
+ul li span:hover{
+    background-color: aliceblue;
+    border: 2px;    
+}
